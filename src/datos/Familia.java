@@ -1,12 +1,44 @@
 package datos;
 
 import java.util.ArrayList;
+import datos.Humano;
 
 public class Familia {
 
 	private String nombre;
 	
 	private String Ubicacion;
+	
+	private ArrayList<ArrayList<Humano>> familias = new ArrayList<ArrayList<Humano>>();
+	
+	private ArrayList<Humano> arryn = new ArrayList<Humano>();
+	
+	private ArrayList<Humano> lannister = new ArrayList<Humano>();
+	
+	private ArrayList<Humano> stark = new ArrayList<Humano>();
+	
+	private ArrayList<Humano> baratheon = new ArrayList<Humano>();
+	
+	private ArrayList<Humano> tully = new ArrayList<Humano>();
+	
+	private ArrayList<Humano> tirell = new ArrayList<Humano>();
+	
+	private ArrayList<Humano> targaryen = new ArrayList<Humano>();
+	
+	private ArrayList<Humano> greyjoy = new ArrayList<Humano>();
+	
+	public void addFamilias(){
+		familias.add(arryn);
+		familias.add(lannister);
+		familias.add(stark);
+		familias.add(baratheon);
+		familias.add(tully);
+		familias.add(tirell);
+		familias.add(targaryen);
+		familias.add(greyjoy);
+	}
+	
+		
 	
 	public Familia(String nombre, String ubicacion) {
 		super();
@@ -40,6 +72,7 @@ public class Familia {
 		}
 		return enc;
 	}
+
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
